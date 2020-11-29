@@ -246,3 +246,7 @@ def top10_useful_apps(request):
         image_src=image_soup.find('img',{'class':'t0fcAb'})['src']
         final_list2.append(i+[image_src])
     return render(request,'top/useful_apps.html',{'data':final_list2})
+
+
+def home(request):
+    return render(request,'base.html')

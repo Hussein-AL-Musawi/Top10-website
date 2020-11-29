@@ -16,6 +16,7 @@ urlpatterns = [
     path('best_phones',views.top10_phones,name='best_phones'),
     path('gaming_laptops',views.top10_gaming_laptops,name='gaming_laptops'),
     path('useful_apps',views.top10_useful_apps,name='useful_apps'),
+    path('',views.home,name='home')
     
 
 
