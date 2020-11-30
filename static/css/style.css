@@ -186,7 +186,7 @@ a {
   color: black;
   display: grid;
   padding: 8rem 5rem;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 30rem));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 35rem));
   grid-gap: 2rem;
   justify-content: center;
   align-items: start;
@@ -200,7 +200,7 @@ a {
 
 @media only screen and (max-width: 1025px) {
   .cards {
-    grid-template-columns: repeat(auto-fill, minmax(5rem, 30rem));
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 30rem));
     padding: 8rem 3rem;
   }
 }
