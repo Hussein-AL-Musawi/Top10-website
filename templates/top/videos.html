@@ -1,3 +1,17 @@
-{% for i in data %}
-<p><img src={{i.7}}> {{i.0}} {{i.1}} {{i.3}} billions
-{% endfor %}
+{% extends 'top10.html' %}
+{% block content %}
+     {% for i in data %}
+    <div class="item">
+        <div class="img__container">
+            <img src={{i.7}}
+                alt="" class="card__img">
+        </div>
+        <div class="item__text">
+            <h1 class="item__heading">{{i.0}}{{i.1}}</h1>
+            <p class="item__desc">{{i.2}}</p>
+            <p class="item__desc">{{i.3}}b views</p>
+        </div>
+    </div>
+     {% endfor %}   
+    
+{% endblock content %}

@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/top10.css' %}">
+    <script src="{% static 'main.js' %}" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Texturina&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar ">
+            <h1 class="navbar__heading">Top 10</h1>
+            <span class="navbar__toggle"></span>
+        </nav>
+        <section id="items" class="cards">
+            {% block content %}
+            <div class="item">
+                <div class="img__container">
+                    <img src="https://upload.wikimedia.org/wikipedia/ar/thumb/3/3c/%D9%85%D9%84%D8%B5%D9%82_%D9%81%D9%84%D9%85_%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D8%A8_%28%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%A3%D9%88%D9%84%29%281972%29.jpg/260px-%D9%85%D9%84%D8%B5%D9%82_%D9%81%D9%84%D9%85_%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D8%A8_%28%D8%A7%D9%84%D8%AC%D8%B2%D8%A1_%D8%A7%D9%84%D8%A3%D9%88%D9%84%29%281972%29.jpg"
+                        alt="" class="card__img">
+                </div>
+                <div class="item__text">
+                    <h1 class="item__heading">Godfather</h1>
+                    <p class="item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quia iure assumenda similique vel ipsam quae officia consequuntur excepturi sapiente?</p>
+                </div>
+            </div>
+            {% endblock content %}
+        </section>
+        
+    </div>
+
+    <div class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__element">
+                <a href="#" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__element">
+                <a href="#" class="navigation__link">Contact</a>
+            </li>
+            <li class="navigation__element">
+                <a href="#" class="navigation__link">
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
