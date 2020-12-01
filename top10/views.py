@@ -20,7 +20,7 @@ def top10_movies(request):
     for i in data[0:10]:
         output+=[[i.td.find('a').img['alt'],i.find('strong').text,i.td.find('a').img['src']]]
     
-    return render(request,'top/movies.html',{'ip':output})
+    return render(request,'top/movies.html',{'data':output})
 
 def top10_rich(request):
 
@@ -132,7 +132,7 @@ def top10_series(request):
     for i in data[0:10]:
         output+=[[i.td.find('a').img['alt'],i.find('strong').text,i.td.find('a').img['src']]]
     
-    return render(request,'top/series.html',{'ip':output})
+    return render(request,'top/series.html',{'data':output})
 
 
 def top10_popluations(request):

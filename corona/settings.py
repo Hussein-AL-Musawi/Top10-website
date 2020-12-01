@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
 from pathlib import Path
 import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +26,9 @@ SECRET_KEY = 'n1ame1g9d55s^*872*+7izaqs2n6x2q3-zza&&-_tnw4yqncb@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['top10articals.herokuapp.com']
+ALLOWED_HOSTS = ['top10articals.herokuapp.com',
+                '127.0.0.1',
+]
 
 
 # Application definition
